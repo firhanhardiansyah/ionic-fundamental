@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="mt-ion-content">
+    <div class="ion-padding">
+      <h1>Login</h1>
+    </div>
+    <form (ngSubmit)="navigateFeedPage()" #form="ngForm">
+      <!-- Username -->
+      <ion-list class="ion-padding">
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Username</ion-label>
+          <ion-input required type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- End Username -->
+
+      <!-- Password -->
+      <ion-list class="ion-padding">
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input required type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- End Password -->
+
+      <!-- Button Login -->
+      <ion-list>
+        <ion-button
+          (click)="login()"
+          expand="block"
+          shape="round"
+          class="ion-padding"
+          color="tertiary"
+        >
+          Log in
+        </ion-button>
+      </ion-list>
+      <!-- End Button Login -->
+
+      <ion-item lines="none" class="txt-signup">
+        <p>Belum punya akun ?</p>
+        <a [routerLink]="['/signup']">Sign Up</a>
+      </ion-item>
+    </form>
+  </div>
+</ion-content>
