@@ -1,0 +1,40 @@
+Step By Step
+
+Create folder 
+  - pages
+  - components
+  
+ionic generate page index
+ionic generate page home
+
+ionic generate page pages/welcome
+ionic generate page pages/login
+ionic generate page pages/signup
+ionic generate page pages/feed
+ionic generate page pages/messages
+ionic generate page pages/notification
+ionic generate page pages/settings
+
+ionic generate module components
+
+ionic generate component components/logo
+ionic generate component components/slides
+ionic generate component components/start
+
+components.module.ts
+  declarations: [SlidesComponent],
+  exports: [SlidesComponent],
+
+npm run build
+
+ionic capacitor add ios
+ionic capacitor add android
+
+
+Status Bar
+  ionic cordova plugin add cordova-plugin-statusbar
+  npm install @ionic-native/status-bar
+  
+  tambahkan app.components.ts
+  this.statusBar.overlaysWebView(true);
+  this.statusBar.backgroundColorByHexString('#33000000');
