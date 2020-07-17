@@ -1,0 +1,63 @@
+<ion-content>
+  <div class="mt-ion-content">
+    <div class="ion-padding">
+      <h1>Sign Up</h1>
+    </div>
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <!-- Username -->
+      <ion-list class="ion-padding">
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Username</ion-label>
+          <ion-input required type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- End Username -->
+
+      <!-- Email -->
+      <ion-list class="ion-padding">
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input required type="text"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- End Email -->
+
+      <!-- Password -->
+      <ion-list class="ion-padding">
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input required type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- End Password -->
+
+      <!-- RePassword -->
+      <ion-list class="ion-padding">
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Re Password</ion-label>
+          <ion-input required type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- End RePassword -->
+
+      <!-- Button Login -->
+      <ion-list>
+        <ion-button
+          (click)="navigateToHomePage()"
+          expand="block"
+          shape="round"
+          class="ion-padding"
+          color="tertiary"
+        >
+          Sign Up
+        </ion-button>
+      </ion-list>
+      <!-- End Button Login -->
+
+      <ion-item lines="none" class="txt-signup">
+        <p>Sudah mempunyai akun ?</p>
+        <a [routerLink]="['/login']">Login</a>
+      </ion-item>
+    </form>
+  </div>
+</ion-content>
