@@ -1,7 +1,8 @@
 {
   "name": "ionic-fundamental",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
